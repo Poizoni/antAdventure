@@ -33,7 +33,7 @@ public class FieldGeneration {
         String choice = scanner.nextLine();
 
         switch (choice) {
-            case ("w"):
+            case ("s"):
 
                 int k = 6;
                 int size = field.length;
@@ -61,7 +61,7 @@ public class FieldGeneration {
                 }
                 break;
 
-            case ("s"):
+            case ("w"):
                 int b = 12;
                 int size2 = field.length;
 

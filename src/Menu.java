@@ -35,17 +35,18 @@ public class Menu {
         }
     }
     public static void forage() {
-        Main.newScreen();
         System.out.println("you are now in the woods...");
         System.out.println("walk / climb / dig / return");
         String forageChoice = Main.scanner.nextLine().toLowerCase();
         switch(forageChoice) {
             case("walk"):
-                generateTerrain();
+                FieldGeneration.makeField();
+                forage();
                 System.out.println("w / a / s / d");
                 String direction = Main.scanner.nextLine().toLowerCase();
                     switch (direction) {
                         case("w"):
+                            FieldGeneration.makeField();
                             forage();
                         case("a"):
                             forage();
